@@ -6,6 +6,7 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
+from sklearn import tree
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import LinearRegression
 import sklearn.metrics as sm
