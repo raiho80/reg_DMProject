@@ -51,9 +51,9 @@ Y_pred_dtr = np.round(regressorDT.predict(X_test),4)
 df_dtr = pd.DataFrame({'Actual value' : Y_test, 'Predicted c' : Y_pred_dtr, 'Difference' : Y_test - Y_pred_dtr})  
 df_dtr.sort_index()
 
-a = ("Mean squared error : ", round(sm.mean_squared_error(Y_test, Y_pred_dtr), 4))
-b = ("Mean absolute error : ", round(sm.mean_absolute_error(Y_test, Y_pred_dtr), 4))
-c = ("r2 score : ",r2_score(Y_test, Y_pred_dtr))
+a = "Mean squared error : ", round(sm.mean_squared_error(Y_test, Y_pred_dtr), 4)
+b = "Mean absolute error : ", round(sm.mean_absolute_error(Y_test, Y_pred_dtr), 4)
+c = "r2 score : ",r2_score(Y_test, Y_pred_dtr)
 
 fn = boruta_X.columns
 figDT, axes = plt.subplots(nrows = 1,ncols = 1,figsize = (5,1), dpi = 500)
